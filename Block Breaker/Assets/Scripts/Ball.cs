@@ -15,7 +15,6 @@ public class Ball : MonoBehaviour
     void Start()
     {
         paddleToBallVector = transform.position - paddle1.transform.position;
-        //Debug.Log(paddleToBallVector);
     }
 
     // Update is called once per frame
@@ -23,7 +22,6 @@ public class Ball : MonoBehaviour
     {
         Vector2 paddlePos = new Vector2(paddle1.transform.position.x, paddle1.transform.position.y);
         transform.position = paddlePos + paddleToBallVector;
-        Debug.Log(transform.position + " " +paddlePos + " " + paddleToBallVector);
     }
 }
 
